@@ -1,3 +1,9 @@
+# For cpnt200-a5
+.env
+.nuxt
+.vscode
+node_modules
+
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
