@@ -1,12 +1,11 @@
 <template>
   <v-main>
     <v-container>
-    <Header :pageInfo="pageInfo"/>
-    <div>Techs Alot of the Round Table</div>
-    <div>Big Header Photo Here</div>
-    <div>Most Popular Content Here????</div>
     
+    <Header :pageInfo="pageInfo"/>
+    Members page....    
     <Footer />
+    
     </v-container>
   </v-main>
 </template>
@@ -16,10 +15,6 @@
    */
 </style>
 <script>
-import cnavigation from '../components/Navigation.vue'
-import cheader from '../components/Header.vue'
-import cfooter from '../components/Footer.vue'
-
 export default {
 
   head() {
@@ -31,13 +26,10 @@ export default {
     return {
       // Custom page data comes here.
       pageInfo: {
-        menuName: 'home',
+        menuName: 'members',
       }
     }
   },
-  components:{
-    cnavigation, cheader, cfooter
-  },  
   async asyncData ({ $content }) {
 
     return {

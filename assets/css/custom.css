@@ -1,0 +1,22 @@
+
+/****************************************************************************/
+/*********                 Common Styles                            *********/
+/****************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  min-height:100vh;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gothic', Arial, sans-serif;
+}
+p {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
