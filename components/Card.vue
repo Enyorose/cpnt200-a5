@@ -3,15 +3,16 @@
         <div class="rounded overflow-hidden shadow-lg">
       <img class="w-full" src="/mountain.jpg" alt="Mountain">
       <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">Mountain</div>
-        <p class="text-gray-700 text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+        <h2 class="font-bold text-2xl mb-2">{{card.title}}</h2>
+        <h3 class="text-xl">{{card.name}}</h3>
+        <p class="text-base">
+          {{card.description}}
         </p>
       </div>
       <div class="px-6 pt-4 pb-2">
-        <span class="filter">#photography</span>
-        <span class="filter">#travel</span>
-        <span class="filter">#winter</span>
+        <span class="filter">{{card.filter[0]}}</span>
+        <span class="filter">{{card.filter[1]}}</span>
+        <span class="filter">{{card.filter[2]}}</span>
       </div>
      </div>
     </div> 

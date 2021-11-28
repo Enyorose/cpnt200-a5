@@ -3,7 +3,7 @@
     <v-container>
     
     <Header :pageInfo="pageInfo"/>
-    <Card />
+    <Card :card="cardInfo"/>
     <Footer />
     </v-container>
   </v-main>
@@ -21,6 +21,12 @@ export default {
       // Custom page data comes here.
       pageInfo: {
         menuName: 'members',
+      },
+      cardInfo: {
+        name: 'Jessica Watson',
+        title: 'Backend',
+        description: 'Set up and managed server information as well as designed members page.',
+        filter: ['#family', '#photographer', '#developer']
       }
     }
   },
