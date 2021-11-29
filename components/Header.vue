@@ -1,6 +1,9 @@
 <template>
-  <header class="flex bg-indigo-900 py-3">
-    <h1 class="text-white text-2xl whitespace-nowrap">{{siteName}}</h1><Navigation :pageInfo="pageInfo" />
+  <header class="flex justify-between content-center bg-gray-800 py-5 px-5">
+    <div class="text-white text-3xl whitespace-nowrap pt-1">
+      <i class="fab fa-watchman-monitoring"></i> {{siteName}}
+    </div>
+    <Navigation :pageInfo="pageInfo" />
   </header>
 </template>
 <script>
@@ -10,7 +13,7 @@ export default {
     return {
   
       // Custom page data comes here.
-      siteName: "CPNT200-A5-Final Project",
+      siteName: "CPNT200-A5 Tech Blog",
     }
   }
 }
