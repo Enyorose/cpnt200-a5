@@ -1,13 +1,13 @@
 <template>
   <v-main>
-    <v-container>
+
     <Header :pageInfo="pageInfo"/>
     <div>Techs Alot of the Round Table</div>
     <div>Big Header Photo Here</div>
     <div>Most Popular Content Here????</div>
     
     <Footer />
-    </v-container>
+
   </v-main>
 </template>
 <style scoped>

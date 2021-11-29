@@ -1,12 +1,10 @@
 <template>
   <v-main>
-    <v-container>
-    
+   
     <Header :pageInfo="pageInfo"/>
     About page....
     <Footer />
     
-    </v-container>
   </v-main>
 </template>
 <style scoped>
