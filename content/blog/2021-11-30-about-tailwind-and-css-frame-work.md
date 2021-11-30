@@ -3,7 +3,7 @@ title: "About Tailwind and CSS frame work. "
 date: 2021-11-30T23:32:00.857Z
 description: This is our Tech Blog.
 tag: "Jessica, Alex,Devon and Hyeju "
-image: /images/gettyimages-693134468.jpg
+image: /images/twitter-square.daf77586b35e90319725e742f6e069f9.jpg
 ---
 <!--\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
