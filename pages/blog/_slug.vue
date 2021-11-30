@@ -1,35 +1,51 @@
 <template>
-<v-main>
-  <v-container>
-    <Header  :siteInfo="siteInfo" :pageInfo="pageInfo" />
-    <section>
-      <div class="text-center mt-8">
-        <h2 class="text-3xl font-bold">Blog Post</h2>
+ <v-main>
+
+    <Header :pageInfo="pageInfo" />
+    <section class="mt-8 mx-10">
+      <div class="flex justify-between text-l text-center py-2 border-b-2 border-indigo-900">
+        <h2 class="">HOME &gt; BLOG &gt; POSTING</h2>
+        <h2><NuxtLink :to="`/blog}`"> &lt; Back to List</NuxtLink></h2>
       </div>
-          <div class="mb-4">
-            <h3 v-text="'Title: '+post.title" class="text-xl font-bold mb-2"></h3>
-            <h4>- Date: {{post.date}}</h4>
-            <h4>- Keywords: {{post.description}}</h4>
-            <nuxt-content
-              class="bg-gray-200 mt-2 mb-8 mx-4"
-              :document="post"
-            />
+      <div class="flex flex-col content-center">
+        <h3 v-text="'Title: '+post.title" class="text-xl font-bold mt-5"></h3>
+        <h4 class="flex justify-between ml-2 mt-2 mb-5 text-gray-600 font-bold">
+          <div>
+            Tags: <span v-for="(tag, index) in post.tag.split('#')"
+                      :key="index"
+                      v-if="(tag !== null && tag !== '')"
+                      class="
+                        inline-block
+                        bg-gray-300
+                        rounded-full
+                        px-3
+                        py-1
+                        text-sm
+                        font-semibold
+                        text-gray-700
+                        mr-2
+                        mb-2
+                      ">#{{ tag }}</span>
           </div>
+          <span class="mr-2">Published Date: {{formatTime(post.date)}}</span>
+        </h4>
+        <div class="w-1/5 mx-auto">
+          <nuxt-img :src="post.image" :alt="post.title" class="w-full" />
+        </div>
+        <div class="bg-blue-200 rounded-xl p-5">
+          <h4 class="font-bold pb-2">Description</h4>
+          <p class="font-serif">{{post.description}}</p>
+        </div>
+        <nuxt-content
+          class="bg-gray-200 px-2 py-4 mt-5 rounded-xl"
+          :document="post"
+        />
+      </div>
     </section>
-    <Footer :info="siteInfo" />
-  </v-container>
-</v-main>
+
+    <Footer />
+  </v-main>
 </template>
-<style scoped>
-.container {
-  padding-top: 0px !important;
-}
-</style>
-<style scoped>
-.container {
-  padding-top: 0px !important;
-}
-</style>
 <script>
 export default {
   data() {
@@ -41,9 +57,14 @@ export default {
     }
   },
   async asyncData({ $content, params }) {
-    const siteInfo = await $content('site-info').fetch()
     const post = await $content('blog', params.slug).fetch()
-    return { siteInfo, post }
+    return { post }
+  },
+  methods: {
+    formatTime: function(str) {
+      
+      return (new Date(Date.parse(str))).toLocaleDateString('en-us', { year:"numeric", month:"short", day:"numeric"});
+    }
   }
 }
 </script>

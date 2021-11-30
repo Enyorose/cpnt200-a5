@@ -1,8 +1,8 @@
 <template>
-  <v-main>
+  <v-main class="bg-blue-50">
     <Header :pageInfo="pageInfo" />
     <section class="mt-8">
-      <h1 class="text-3xl text-center font-bold">Tech Posts</h1>
+      <h1 class="text-4xl text-center font-bold py-5 mx-10 border-b-4 border-indigo-900">Tech Postings</h1>
       <div
         class="
           p-10
@@ -17,23 +17,24 @@
         <ul>
           <li v-for="(post, index) in posts" :key="index">
             <!-- Card -->
-            <div class="rounded overflow-hidden shadow-lg">
-              <nuxt-img :src="post.image" :alt="post.title" class="w-full" />
+            <div class="rounded overflow-hidden shadow-lg bg-gray-100">
+              <NuxtLink :to="`/blog/${post.slug}`">
+                <nuxt-img :src="post.image" :alt="post.title" class="w-full" />
+              </NuxtLink>
               <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2">{{ post.title }}</div>
-                <p
-                  v-text="post.description"
-                  class="text-gray-700 text-base"
-                ></p>
+                <div class="font-bold text-xl mb-2">
+                  <NuxtLink :to="`/blog/${post.slug}`">{{ post.title }}</NuxtLink>
+                </div>
+                <p v-text="post.description" class="text-gray-700 text-base"></p>
               </div>
               <div class="px-6 pt-4 pb-2">
                 <span
                   v-for="(tag, index) in post.tag.split('#')"
                   :key="index"
-                  v-if="tag !== null && tag !== ''"
+                  v-if="(tag !== null && tag !== '')"
                   class="
                     inline-block
-                    bg-gray-200
+                    bg-gray-300
                     rounded-full
                     px-3
                     py-1
@@ -52,25 +53,6 @@
         </ul>
       </div>
     </section>
-
-    <!-- <section>
-    <div class="text-center mt-8">
-      <h2 class="text-3xl font-bold">Blog Posts</h2>
-    </div>
-    <ul>
-      <li v-for="(post, index) in posts" :key="index">
-        <div class="mb-4">
-          <h3 class="text-xl font-bold mb-2"><NuxtLink :to="`/blog/${post.slug}`">{{index+1}}.  {{ post.title }}</NuxtLink></h3>
-          <h4>- Date: {{post.date}}</h4>
-          <h4>- Keywords: {{post.description}}</h4>
-          <nuxt-content
-            class="bg-gray-200 mt-2 mb-8 mx-4"
-            :document="post"
-          />
-        </div>
-      </li>
-    </ul>
-  </section> -->
 
     <Footer />
   </v-main>
