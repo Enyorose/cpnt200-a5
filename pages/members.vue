@@ -1,17 +1,8 @@
 <template>
   <v-main>
     <Header :pageInfo="pageInfo" />
-    <div
-      class="
-        p-10
-        grid grid-cols-1
-        sm:grid-cols-1
-        md:grid-cols-3
-        lg:grid-cols-4
-        xl:grid-cols-4
-        gap-5
-      "
-    >
+    <subheader :page="pageInfo" />
+    <div class="layout">
       <Card :card="card" v-for="card in cards" :key="card.id" />
     </div>
     <Footer />
@@ -29,6 +20,7 @@ export default {
       // Custom page data comes here.
       pageInfo: {
         menuName: "members",
+        header: "Our Hard Working Team",
       },
       cards: [
         {
@@ -63,3 +55,14 @@ export default {
   },
 };
 </script>
+<style lang="postcss" scoped>
+.layout {
+  @apply p-10
+        grid grid-cols-1
+        sm:grid-cols-1
+        md:grid-cols-3
+        lg:grid-cols-4
+        xl:grid-cols-4
+        gap-5;
+}
+</style>
