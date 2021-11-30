@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
+    "axios": "^0.24.0",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "vue-instagram-embed": "^1.0.0"
   },
   "devDependencies": {
     "@nuxt/image": "^0.6.0",
