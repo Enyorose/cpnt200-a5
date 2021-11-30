@@ -1,10 +1,12 @@
 <template>
   <v-main>
     <Header :pageInfo="pageInfo" />
-    <subheader :page="pageInfo" />
-    <div class="layout">
-      <Card :card="card" v-for="card in cards" :key="card.id" />
-    </div>
+    <section class="mt-8 mx-10">
+      <subheader :page="pageInfo" />
+      <div class="layout">
+        <Card :card="card" v-for="card in cards" :key="card.id" />
+      </div>
+    </section>
     <Footer />
   </v-main>
 </template>
