@@ -1,8 +1,12 @@
 <template>
-  <v-main class="bg-blue-50">
+  <v-main>
     <Header :pageInfo="pageInfo" />
-    <section class="mt-8">
-      <h1 class="text-4xl text-center font-bold py-5 mx-10 border-b-4 border-indigo-900">Tech Postings</h1>
+    <section class="mt-8 mx-10">
+      <div class="flex justify-between content-end text-l text-center py-2 border-b-4 border-indigo-900">
+        <h2 class="pt-4 px-2">HOME &gt; BLOG &gt; POSTING</h2>
+        <h1 class="text-4xl font-bold pr-20 mr-10">Tech Postings</h1>
+        <h2 class="pt-4 px-2"></h2>
+      </div>
       <div
         class="
           p-10
@@ -17,7 +21,7 @@
         <ul>
           <li v-for="(post, index) in posts" :key="index">
             <!-- Card -->
-            <div class="rounded overflow-hidden shadow-lg bg-gray-100">
+            <div class="rounded overflow-hidden shadow-lg bg-gray-100 py-1 px-1">
               <NuxtLink :to="`/blog/${post.slug}`">
                 <nuxt-img :src="post.image" :alt="post.title" class="w-full" />
               </NuxtLink>
@@ -34,7 +38,7 @@
                   v-if="(tag !== null && tag !== '')"
                   class="
                     inline-block
-                    bg-gray-300
+                    bg-yellow-200
                     rounded-full
                     px-3
                     py-1
