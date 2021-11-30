@@ -52,7 +52,7 @@ export default {
     return {
       // Custom page data comes here.
       pageInfo: {
-        name: 'blog',
+        menuName: 'blog',
       }
     }
   },
