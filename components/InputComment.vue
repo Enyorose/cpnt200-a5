@@ -2,7 +2,7 @@
   <label :for="inputInfo.inputName" class="flex flex-col"
     >{{ inputInfo.label }}
     <input
-      class="border-2 mt-3"
+      class="shadow-sm border-gray-300 rounded-lg m-2"
       type="text"
       :name="inputInfo.inputName"
       :value="value"
