@@ -17,18 +17,20 @@
           Fill out this short form and keep an eye out we may cover your topic
           next!
         </p>
-        <form
-          @submit.prevent="addComment"
-          class="mt-5 flex flex-col items-center border-2 max-w-md"
-        >
-          <InputComment
-            :value="message.msg"
-            :inputInfo="message"
-            v-model="message.msg"
-            class="border-0"
-          />
-          <button class="bg-gray-400 mt-5">Add Comment</button>
-        </form>
+        <div class="max-w-md mx-auto">
+          <form
+            @submit.prevent="addComment"
+            class="mt-5 flex flex-col items-center border-2 rounded-lg"
+          >
+            <InputComment
+              :value="message.msg"
+              :inputInfo="message"
+              v-model="message.msg"
+              class="border-0 my-4"
+            />
+            <button class="bg-gray-400 my-5 p-1 rounded-lg">Add Comment</button>
+          </form>
+        </div>
         <ul>
           <li
             v-for="message in commentItems"

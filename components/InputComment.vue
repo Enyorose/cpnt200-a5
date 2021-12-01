@@ -1,13 +1,12 @@
 <template>
   <label :for="inputInfo.inputName" class="flex flex-col"
     >{{ inputInfo.label }}
-    <input
-      class="shadow-sm border-gray-300 rounded-lg m-2"
-      type="text"
+    <textarea
+      class="shadow-md border-black rounded-lg m-2"
       :name="inputInfo.inputName"
       :value="value"
       @input="$emit('input', $event.target.value)"
-    />
+    ></textarea>
   </label>
 </template>
 <script>
