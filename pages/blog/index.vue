@@ -1,7 +1,7 @@
 <template>
   <v-main>
     <Header :pageInfo="pageInfo" />
-    <section class="mt-8 mx-10">
+    <section class="mt-8 mx-10 mb-10">
       <div class="grid grid-cols-3 text-l text-center py-2 border-b-4 border-indigo-900">
         <div class="pt-4 px-2 text-left">HOME &gt; BLOG</div>
         <div class="text-4xl font-bold">Tech Postings</div>

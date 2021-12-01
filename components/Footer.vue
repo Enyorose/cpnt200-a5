@@ -1,9 +1,7 @@
 <template>
-  <footer class="border-t border-gray-200 my-2">
-    <div
-      class="container flex flex-wrap items-center justify-center py-2 mx-auto"
-    >
-      <h4 v-html="copyright"></h4>
+  <footer class="fixed bottom-0 w-screen">
+    <div class="bg-gray-800 text-center py-1">
+      <h4 class="text-white" v-html="copyright"></h4>
     </div>
   </footer>
 </template>
