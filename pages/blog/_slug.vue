@@ -3,13 +3,14 @@
 
     <Header :pageInfo="pageInfo" />
     <section class="mt-8 mx-10">
-      <div class="flex justify-between content-end text-l text-center py-2 border-b-4 border-indigo-900">
-        <h2 class="pt-4 px-2">HOME &gt; BLOG &gt; POSTING</h2>
-        <h1 class="text-4xl font-bold pr-20 mr-10">Tech Article</h1>
-        <h2 class="pt-4 px-2"><NuxtLink :to="`/blog`"> &lt; Back to List</NuxtLink></h2>
+      <div class="grid grid-cols-3 text-l text-center py-2 border-b-4 border-indigo-900">
+        <div class="pt-4 px-2 text-left">HOME &gt; BLOG &gt; POSTING</div>
+        <div class="text-4xl font-bold">Tech Article</div>
+        <div class="pt-4 px-2 text-right"><NuxtLink :to="`/blog`"> &lt; Back to List</NuxtLink></div>
       </div>
       <div class="flex flex-col content-center">
-        <div class="border-b-2 border-indigo-900">
+        <!-- Article Head -->
+        <div class="border-b-2 border-indigo-900 mb-4">
           <h3 v-text="'Title: '+post.title" class="text-xl font-bold mt-2 ml-2"></h3>
           <h4 class="flex justify-between ml-2 mt-2 text-gray-600 font-bold">
             <div>
@@ -32,10 +33,11 @@
             <span class="mr-2">Published Date: {{formatTime(post.date)}}</span>
           </h4>
         </div>
+        <!-- Article Body -->
         <div class="w-1/5 mx-auto">
           <nuxt-img :src="post.image" :alt="post.title" class="w-full" />
         </div>
-        <div class="bg-blue-200 rounded-xl p-5">
+        <div class="bg-blue-200 rounded-xl p-5 mt-4">
           <h4 class="font-bold pb-2">Description</h4>
           <p class="font-serif">{{post.description}}</p>
         </div>

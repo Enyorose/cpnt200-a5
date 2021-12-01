@@ -2,10 +2,10 @@
   <v-main>
     <Header :pageInfo="pageInfo" />
     <section class="mt-8 mx-10">
-      <div class="flex justify-between content-end text-l text-center py-2 border-b-4 border-indigo-900">
-        <h2 class="pt-4 px-2">HOME &gt; BLOG &gt; POSTING</h2>
-        <h1 class="text-4xl font-bold pr-20 mr-10">Tech Postings</h1>
-        <h2 class="pt-4 px-2"></h2>
+      <div class="grid grid-cols-3 text-l text-center py-2 border-b-4 border-indigo-900">
+        <div class="pt-4 px-2 text-left">HOME &gt; BLOG</div>
+        <div class="text-4xl font-bold">Tech Postings</div>
+        <div class="pt-4 px-2 text-right"></div>
       </div>
       <div class="p-10 grid grid-cols-1
           sm:grid-cols-1
@@ -15,7 +15,7 @@
           gap-5">
 
         <!-- Card -->
-        <div v-for="(post, index) in posts" :key="index" class="ounded overflow-hidden shadow-lg bg-gray-100 py-1 px-1">
+        <div v-for="(post, index) in posts" :key="index" class="rounded overflow-hidden shadow-lg bg-gray-100 py-1 px-1">
           <NuxtLink :to="`/blog/${post.slug}`">
             <nuxt-img :src="post.image" :alt="post.title" class="w-full" />
           </NuxtLink>
