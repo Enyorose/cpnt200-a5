@@ -1,4 +1,48 @@
 # cpnt200-a5
+# cpnt200-final project
+- Devon
+- Alex
+- Hyeju
+- Jessica
+
+
+## Rules
+- Make sure to communicate what page you are working on before making a lot of changes.
+- Make sure to ask before you change a ton of someone elses code.
+- If you have a conflict be sure to convey it to the group so we can resolve it together
+- try to touch base at least once a day with what you are working on
+
+## Planned Roles
+- Research for Blog Articles //Hyeju
+- Writing the articles //Hyeju
+- Creating yaml file //Jessica
+- setting up props//Jessica
+- deploying to netlify//Jessica
+- design concept//devon
+- wire frame for site//devon
+- Asset gathering images//devon
+- css for pages// Alex
+- site template layout//Alex
+
+## Completion Roles
+- Research for Blog Articles //Hyeju
+- Writing the articles //Hyeju
+- Editing the articles //Devon
+- Initial Site Design //Devon
+- Nav, Header, Footer, Subheader components and Css //Alex
+- Landing Page, Blog page content and css //Alex
+- InputComment, Card components and css // Jessica
+- Members, About page content and css //Jessica
+- Repo, netlify //Jessica
+
+## Attributions
+- [Header Background](https://unsplash.com/photos/ahY4BQp2Da4) 
+  - [Fakurian Design](https://unsplash.com/@fakurian)
+
+- [Main Background](https://unsplash.com/photos/-tOr_T4qTpQ) 
+  - [Adelin Preda](https://unsplash.com/@adelinpreda)
+
+
 
 ## Build Setup
 
@@ -71,10 +115,3 @@ More information about the usage of this directory in [the documentation](https:
 
 ## Attributions
 
-Header Background : Fakurian Design 
-https://unsplash.com/photos/ahY4BQp2Da4
-https://unsplash.com/@fakurian
-
-Main Background: Adelin Preda
-https://unsplash.com/photos/-tOr_T4qTpQ
-https://unsplash.com/@adelinpreda
