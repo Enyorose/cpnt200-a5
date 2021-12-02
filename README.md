@@ -78,3 +78,9 @@ https://unsplash.com/@fakurian
 Main Background: Adelin Preda
 https://unsplash.com/photos/-tOr_T4qTpQ
 https://unsplash.com/@adelinpreda
+
+Image in Landing page: https://pixabay.com/vectors/network-iot-internet-of-things-782707/
+
+Two articles in Blog:
+- https://nuxtjs.org/
+- https://tailwindcss.com/
