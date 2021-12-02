@@ -2,10 +2,19 @@
   <v-main>
 
     <Header :pageInfo="pageInfo"/>
-    <div>Techs Alot of the Round Table</div>
-    <div>Big Header Photo Here</div>
-    <div>Most Popular Content Here????</div>
-    
+    <section>
+      <div class="text-center mt-10">
+        <h1 class="text-3xl font-bold">We deal with Everything in Network.</h1>
+      </div>
+      <div class="w-1/2 mt-8 mx-auto">
+        <nuxt-img src="/image/network-782707.png" alt="network" class="w-full" />
+      </div>
+      <div class="text-center mt-10 mx-auto w-2/3">
+        <p class="text-xl font-sans font-semibold">
+        The speed and scope of the transformation of our communication environment by Internet and wireless communication has triggered all kind of utopian and dystopian perceptions around the world.
+        </p>
+      </div>
+    </section>
     <Footer />
 
   </v-main>
