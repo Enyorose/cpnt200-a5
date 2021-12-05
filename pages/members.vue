@@ -3,7 +3,7 @@
     <v-container>
     
     <Header :pageInfo="pageInfo"/>
-    <Card :card="cardInfo"/>
+    <Card :card="cardInfo" v-for="card in cardInfo" :key="card.id"/>
     <Footer />
     </v-container>
   </v-main>
@@ -22,12 +22,12 @@ export default {
       pageInfo: {
         menuName: 'members',
       },
-      cardInfo: {
+      cardInfo: [{
         name: 'Jessica Watson',
         title: 'Backend',
         description: 'Set up and managed server information as well as designed members page.',
         filter: ['#family', '#photographer', '#developer']
-      }
+      }]
     }
   },
   
