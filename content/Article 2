@@ -1,7 +1,0 @@
-
-I am going to writing about second articles about SASS. SASS is using for preprocessor scripting language that is interpreted or complied in to cascading Style Sheets. For developers are using CSS and SCSS when they make the website. How SASS is working, when you want to put some different style fonts you can use Bootstrap font or google fonts ect. When do you want to style your fonts you can add in to code file and adding fonts. We also call SCSS for sass. For example, if I want a add color and add some button in base. Its kind of similar as CSS.  
-
-Second article I am going to talk about Sass history, Sass was initially designed by Hampton Catlin and developed by Natalie Weinbaum in 2006 as a feature of the Haml markup language. Also,Chris Eppstein creator of campass, later joined primary developer Weizenbaum
- in 2008. After its initial versions, Weizenbaum and Chris Eppstein have continued to extend Sass with Sass Script, a scripting language used in Sass files. Now, developers are using sass a lot and designing for the websites. 
-
-Now, I am going to talk about why we need to use, in first paragraph I said developer use it for style it. But its not a only style in it, developer actually use it with script type with fonts like navigations and landing page ect. Also, sass for Gallery, when developers are make some website Sass is more professional way to created Gallery and navigation. When you want a created your style gallery navigation or fonts sass is important to use. 
